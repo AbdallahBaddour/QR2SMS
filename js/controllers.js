@@ -15,10 +15,10 @@ app.controller("stsCtrl", function ($scope, $cordovaBarcodeScanner, $cordovaSms)
     $scope.stsSMS = function () {
       //Scan Barcode containing each carrier info
       ionic.Platform.ready(function () {
-
+        
         $cordovaBarcodeScanner.scan().then(function (imageData) {
 
-          var content = imageData.text;
+          var content = imageData.text; //get QRcode data
 
           //Get All sim info
           window.plugins.sim.getSimInfo(successCallback, errorCallback);
@@ -27,15 +27,16 @@ app.controller("stsCtrl", function ($scope, $cordovaBarcodeScanner, $cordovaSms)
             $scope.carriername = result.carrierName; //extract Carrier Name
 
             var info = [];
+            //Convert QRcode Data from Text to 2D array
             info = content.split("-").map(function (e) {
               return e.split(":");
             });
             var i;
-            for (i = 0; i < info.length; i++) {
+            for (i = 0; i < info.length; i++) { //loop through QRcode data to find correspondent message info for user carrier name
               var cn = info[i][0];
               if (cn == $scope.carriername) {
-                var nb = info[i][1];
-                var msg = info[i][2];
+                var nb = info[i][1]; //extract number
+                var msg = info[i][2]; //extract message
                 $cordovaSms
                   .send(nb, msg, options)
                   .then(function () {
