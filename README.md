@@ -1,5 +1,5 @@
 # QR2SMS
-<b>Description:</b> Scan QR To Automatically Send SMS Based On user Carrier.
+<b>Description:</b> Scan QRcode To Automatically Send SMS Based On user Carrier.
 
 <b>Created By:</b> [@BaddourAbdallah](http://twitter.com/baddourabdallah) Using [Ionic Framework](http://ionicframework.com/)
 
