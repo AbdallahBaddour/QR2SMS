@@ -1,5 +1,5 @@
 # QR2SMS
-<b>Description:</b> Scan QR To Send SMS Based On user Carrier.
+<b>Description:</b> Scan QR To Automatically Send SMS Based On user Carrier.
 
 <b>Created By:</b> [@BaddourAbdallah](http://twitter.com/baddourabdallah) Using [Ionic Framework](http://ionicframework.com/)
 
@@ -49,3 +49,4 @@ $ ionic run android
 
 #License
 See the [LICENSE](https://github.com/AbdallahBaddour/QR2SMS/blob/master/LICENSE.md) file for license rights and limitations (MIT).
+And you may not use the application for any illegal or unauthorized purpose. You agree to comply with all laws, rules and regulations (for example: federal, state, local and provincial) applicable to your use of the application.
