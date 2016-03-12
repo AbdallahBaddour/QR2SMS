@@ -33,7 +33,7 @@ Add these 2 lines in <b>config.xml</b> below:
 
 8.Generate QR code using the following text format:
 ```bash
-carrier1:receiver_PhoneNumber:message_here-carrier2:receiver_PhoneNumber:message_here-carrier3:....
+carriername1:receiver_PhoneNumber:message_here-carrienamer2:receiver_PhoneNumber:message_here-carriername3:....
 ```
 example:
 ```bash
